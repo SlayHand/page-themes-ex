@@ -1,17 +1,14 @@
 import { useContext } from 'react';
-import Header from './components/Header';
 import ThemeContext, { ThemeProvider } from './context/ThemeContext';
 import './index.css';
+import Page from './components/Page'
 
 function AppContent() {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div id="app" className={theme}>
-            <Header />
-            <main>
-                <p>Tere tulemast demo veebilehele!</p>
-            </main>
+        <div id="app" className={theme}>            
+            <Page />
         </div>
     );
 }

@@ -2,7 +2,7 @@ import Header from './Header.jsx'
 
 const Page = () => {
     return (
-        <div id='app'>
+        <div>
             <Header />
 
             <article>
